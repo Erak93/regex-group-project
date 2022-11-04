@@ -1,8 +1,31 @@
 import re
 
+"""""
+def validate_email():
+    while True:
+        email_input=input("Please digit your email")
+        test=re.search(r'[a-zA-Z]{1}[a-zA-Z_.+-]{0,}\w+@[a-zA-Z_-].+[a-zA-Z]',email_input)
+        if test:
+            print("Thank you for the email")
+            break
+        else:
+            print("Wrong Format")
+"""
 
-def validate_email(email_input):
-    """
+#WORK IN PROGRESS: DO NOT TOUCH!
+
+
+
+
+
+validate_email()
+
+
+
+
+
+
+"""
     Email validation rules:
         - Case insensitive
         - Starts with a letter
@@ -15,6 +38,6 @@ def validate_email(email_input):
     :param email_input: <str> The string to be checked
     :return: True if email_input respects the email format. Returns False otherwise
     """
-    pass
+    
 
 

@@ -46,3 +46,6 @@ if __name__ == "__main__":
 
         else:
             print("Wrong input")
+
+
+add_user()
