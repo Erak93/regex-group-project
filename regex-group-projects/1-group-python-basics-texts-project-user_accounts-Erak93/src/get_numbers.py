@@ -1,11 +1,9 @@
 import re
 
 
-def get_numbers(input):
-    """
-    It would take all the numbers that are in the string
+def get_numbers():
+    string="On 26th of March the Witcher decided it was time to earn money. He only had 30 kronas left. He went to a small city which required his help. The reward was set to 100 kronas, but after a short but convincing discussion with soltys it was raised to 300 kronas."
+    print(re.findall('\d+',string))
 
-    :param input: <str> The string input
-    :return: List containing all the numbers that appeared in the string
-    """
-    pass
+
+get_numbers()
