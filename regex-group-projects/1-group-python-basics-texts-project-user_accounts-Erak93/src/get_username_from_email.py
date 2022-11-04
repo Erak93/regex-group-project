@@ -1,14 +1,16 @@
 import re
 
 
-def get_username_from_email(email):
-    """
+def get_username_from_email():
+    email=input("Give me your email")
+    sear=re.search('(\w+)(@\w+\.\w+$)',email).group(1)
+    if sear:
+        print(sear)
+    else:
+        print("no data")    
+     
 
-    It would extract the first part of the email (the part before @ symbol)
+    
+get_username_from_email()
 
-    :param email: <str> The string input
-    :return: <str> The before @ part of the email
-    """
-
-    pass
-
+ 
