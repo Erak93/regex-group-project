@@ -3,7 +3,7 @@ import re
 
 def validate_email(email):
     
-    test=re.search(r'^[a-zA-Z]{1}[a-zA-Z_.+-]{0,}\w+@[a-zA-Z_\-\.]+\.[a-zA-Z]{2,5}$',email)
+    test=re.search(r'^[A-Za-z][\d\w\._\-]+@\.?([\w\-]+[\.])+\w{2,5}$',email)
     if test:
         return True
             
