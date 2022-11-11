@@ -1,24 +1,22 @@
 import re
 
-"""""
-def validate_email():
-    while True:
-        email_input=input("Please digit your email")
-        test=re.search(r'[a-zA-Z]{1}[a-zA-Z_.+-]{0,}\w+@[a-zA-Z_-].+[a-zA-Z]',email_input)
-        if test:
-            print("Thank you for the email")
-            break
-        else:
-            print("Wrong Format")
-"""
 
-#WORK IN PROGRESS: DO NOT TOUCH!
+def validate_email(email):
+    
+    test=re.search(r'^[a-zA-Z]{1}[a-zA-Z_.+-]{0,}\w+@[a-zA-Z_\-\.]+\.[a-zA-Z]{2,5}$',email)
+    if test:
+        return True
+            
+    return False
 
 
 
 
 
-validate_email()
+
+
+
+#print(validate_email("test@gmail.com"))
 
 
 
