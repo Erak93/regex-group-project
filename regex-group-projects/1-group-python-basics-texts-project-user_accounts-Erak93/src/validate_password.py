@@ -3,6 +3,13 @@ import re
 
 # Complete this function to check if passwords respect the format
 def validate_password(pwd_input):
+    test=re.search('^.*(?=.*[a-z])(?=.*[A_Z])(?=\w{8,30})(?=.*\d)(?=.*[!\*\-_\.]).*$',pwd_input)
+    if test:
+        return True
+
+    return False
+
+
     """
     At least 8 characters
     At most 30 characters
